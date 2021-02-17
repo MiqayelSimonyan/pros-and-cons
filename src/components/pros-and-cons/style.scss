@@ -24,6 +24,19 @@
                 .item {
                     margin: 10px 0;
                 }
+                .delete-item {
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: 2px solid $brown;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 18px;
+                    position: relative;
+                    top: -2px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
             &:first-child {
                 border-right: 1px solid $brown;
@@ -35,9 +48,9 @@
                 font-weight: bold;
             }
             & > input {
-                width: 100%;
+                width: 85%;
                 border-radius: 3px;
-                margin: 0 0 1px 7px;
+                margin: 0 10px 1px 7px;
                    
                 border: 0;
                 &:focus {
